@@ -15,7 +15,6 @@ function App() {
         <Wrapper>
           <Route exact path="/Portfolio_" component={Profile} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="../pages/assets/AlexTaggart_Resume.pdf" />
         <Container>
 
         </Container>
