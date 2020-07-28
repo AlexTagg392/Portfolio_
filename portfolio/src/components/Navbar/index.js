@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <Navbar bg="dark" expand="lg" className="NavBar">
     <Navbar.Brand >
-      <Link to="/" className="Link"> 
+      <Link to="/Portfolio_" className="Link"> 
       Alex Taggart
       </Link>
     </Navbar.Brand>
@@ -17,7 +17,7 @@ function NavBar() {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
         <Nav.Link >
-          <Link to="/" className="link">
+          <Link to="/Portfolio_" className="link">
             About
             </Link>
           </Nav.Link>

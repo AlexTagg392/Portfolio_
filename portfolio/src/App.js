@@ -13,7 +13,7 @@ function App() {
       <div>
         <NavBar />
         <Wrapper>
-          <Route exact path="/" component={Profile} />
+          <Route exact path="/Portfolio_" component={Profile} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="../pages/assets/AlexTaggart_Resume.pdf" />
         <Container>
