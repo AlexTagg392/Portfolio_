@@ -1,0 +1,10 @@
+.NavBar {
+    margin-bottom: 0;
+    
+  }
+.link {
+    color: cyan;
+}
+.link:hover {
+    color: darkcyan;
+}
