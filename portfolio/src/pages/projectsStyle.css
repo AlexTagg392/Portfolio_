@@ -10,3 +10,10 @@ h1, h2, h4, h6, p  {
 .links {
     color: lightcyan;
 }
+.card {
+    background-color: navy;
+    color: lightcoral;
+}
+.card-title {
+    text-align: center;
+}
