@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio_/static/css/main.f47196bc.chunk.css",
+    "main.js": "/Portfolio_/static/js/main.b2ece40d.chunk.js",
+    "main.js.map": "/Portfolio_/static/js/main.b2ece40d.chunk.js.map",
+    "runtime-main.js": "/Portfolio_/static/js/runtime-main.5a52ff0f.js",
+    "runtime-main.js.map": "/Portfolio_/static/js/runtime-main.5a52ff0f.js.map",
+    "static/js/2.0f7ee2b1.chunk.js": "/Portfolio_/static/js/2.0f7ee2b1.chunk.js",
+    "static/js/2.0f7ee2b1.chunk.js.map": "/Portfolio_/static/js/2.0f7ee2b1.chunk.js.map",
+    "index.html": "/Portfolio_/index.html",
+    "precache-manifest.e20d226eff8aa571855d522af75c4fa6.js": "/Portfolio_/precache-manifest.e20d226eff8aa571855d522af75c4fa6.js",
+    "service-worker.js": "/Portfolio_/service-worker.js",
+    "static/css/main.f47196bc.chunk.css.map": "/Portfolio_/static/css/main.f47196bc.chunk.css.map",
+    "static/js/2.0f7ee2b1.chunk.js.LICENSE.txt": "/Portfolio_/static/js/2.0f7ee2b1.chunk.js.LICENSE.txt",
+    "static/media/AlexTaggart_Resume.pdf": "/Portfolio_/static/media/AlexTaggart_Resume.b0a0a2cd.pdf",
+    "static/media/background.jpg": "/Portfolio_/static/media/background.fd75990a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a52ff0f.js",
+    "static/js/2.0f7ee2b1.chunk.js",
+    "static/css/main.f47196bc.chunk.css",
+    "static/js/main.b2ece40d.chunk.js"
+  ]
+}
