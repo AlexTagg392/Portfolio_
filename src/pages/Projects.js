@@ -1,71 +1,130 @@
-import React, { Component } from "react";
-import API from "../utils/API";
-import Card from "../components/Card";
-import Alert from "../components/Alert";
+import React from "react";
+import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
+import "./projectsStyle.css"
+import Image from "../pages/assets/background2.jpg";
+import SimplySomm from "../pages/assets/SimplySomm.png";
+import CineSearch from "../pages/assets/cinesearch.png";
+import ToolNextDoor from "../pages/assets/ToolNextDoor.png"
 
-class Discover extends Component {
-  state = {
-    image: "",
-    match: false,
-    matchCount: 0
-  };
-
-  // When the component mounts, load the next dog to be displayed
-  componentDidMount() {
-    this.loadNextDog();
-  }
-
-  handleBtnClick = event => {
-    // Get the data-value of the clicked button
-    const btnType = event.target.attributes.getNamedItem("data-value").value;
-    // Clone this.state to the newState object
-    // We'll modify this object and use it to set our component's state
-    const newState = { ...this.state };
-
-    if (btnType === "pick") {
-      // Set newState.match to either true or false depending on whether or not the dog likes us (1/5 chance)
-      newState.match = 1 === Math.floor(Math.random() * 5) + 1;
-
-      // Set newState.matchCount equal to its current value or its current value + 1 depending on whether the dog likes us
-      newState.matchCount = newState.match
-        ? newState.matchCount + 1
-        : newState.matchCount;
-    } else {
-      // If we thumbs down'ed the dog, we haven't matched with it
-      newState.match = false;
-    }
-    // Replace our component's state with newState, load the next dog image
-    this.setState(newState);
-    this.loadNextDog();
-  };
-
-  loadNextDog = () => {
-    API.getRandomDog()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
-  };
-
-  render() {
-    return (
-      <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
-        </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
-        </h1>
-        <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
-        </Alert>
-      </div>
-    );
-  }
+function Projects() {
+  return (
+    <div>
+      <Hero className="image" backgroundImage={Image}>
+        <h1>Alex Taggart</h1>
+        <br/>
+        <h2>Passionate Full Stack Web Developer</h2>
+      </Hero>
+      <Container style={{ marginTop: 30 }}>
+        <Row>
+          <Col size="md-12">
+            <h1>Welcome To My Projects!</h1>
+            {/* <h4>Click on Projects to see my work!</h4> */}
+            <h4><a className="links" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>  |  <a href="https://docs.google.com/document/d/1HSC-ZWWhYmK09Sp2Q9dplR12UchosU7bdGmLnQmPB40/edit?usp=sharing" className="links"> Resume</a>  </h4>
+            <h4><a className="links" href="https://github.com/AlexTagg392">GitHub</a></h4>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-12">
+            <hr />
+            <h1>Projects</h1>
+          </Col>
+          <Col size="sm-12">
+          <div class="card">
+                <img class="card-img" src={ToolNextDoor} alt="Tool Next Door"/>
+                <div class="card-body">
+                  <h4 class="card-title">Tool Next Door</h4>
+                  <div>
+                    <p class="text-title">Description</p>
+                    <p class=" text">
+                      Tool Next Door is a Community Application of do-it-yourselfers that benefit from each other needs. 
+                      
+                    </p>
+                    <p class="text-title">Concepts and Technologies</p>
+                    <p class=" text">
+                      HTML, CSS, JavaScript, MongoDB, REACT, Express, Node.js, Mongoose, Heroku, Material UI and Stripe.
+                      
+                    </p>
+                  </div>
+                  <div class="button">
+                  <a href="https://shielded-temple-94953.herokuapp.com/" class="btn btn-primary">Tool Next Door! 
+                  </a>
+                  <a href="https://github.com/AlexTagg392/ToolNextDoor" class="btn btn-primary">Click Here for the Repo </a>
+                  </div>
+                </div>
+              </div>
+            {/* <div class="col-sm-6"> */}
+              <div class="card">
+                <img class="card-img-top" src={SimplySomm} alt="Simply Somm"/>
+                <div class="card-body">
+                  <h4 class="card-title">Simply Somm </h4>
+                  <div>
+                    <p class="text-title">Description</p>
+                    <p class=" text">
+                    Simply Somm is an Application that creates a list of whiskey or wine based on a user's picks in Aroma and Taste.
+                      
+                    </p>
+                    <p class="text-title">Concepts and Technologies</p>
+                    <p class=" text">
+                    HTML, CSS, Node.js, Sequelize, jQuery, JavaScript, Express.js, Express-Handlebars, Path, and Bootstrap. 
+                      
+                    </p>
+                  </div>
+                  <div class="button">
+                  <a href="https://metric-drake-50737.herokuapp.com/" class="btn btn-primary">Simply Somm! 
+                  </a>
+                  <a href="https://github.com/AlexTagg392/SimplySomm" class="btn btn-primary">Click Here for the Repo </a>
+                </div>
+                </div>
+              </div>
+            {/* </div> */}
+            {/* <div class="col-sm-6"> */}
+              <div class="card">
+                <img class="card-img-top" src={CineSearch} alt="CineSearch"/>
+                <div class="card-body">
+                  <h4 class="card-title">CineSearch </h4>
+                  <div>
+                    <p class="text-title">Description</p>
+                    <p class=" text">
+                    CineSearch is an Application that allows you to find a list of movies that fits your search criteria
+                      
+                    </p>
+                    <p class="text-title">Concepts and Technologies</p>
+                    <p class=" text">
+                    HTML, CSS, JavaScript, jQuery, Foundation Framework and Multiple Movie APIs(OMDB, TMDB and UTelly)
+                      
+                    </p>
+                  </div>
+                  <div class="button">
+                  <a href="https://alextagg392.github.io/CineSearch/" class="btn btn-primary">CineSearch! 
+                  </a>
+                  <a href="https://github.com/AlexTagg392/CineSearch" class="btn btn-primary">Click Here for the Repo </a>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-12">
+            <hr />
+            <h2>Contact</h2>
+          </Col>
+          <Col size="md-12">
+                <p>
+                  If you need to you can contact me at my email address:
+                </p>
+                <p>
+                  christag392@gmail.com
+                </p>  
+                <hr />    
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 }
 
-export default Discover;
+export default Projects;
+        

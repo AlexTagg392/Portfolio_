@@ -1,8 +1,18 @@
 hr {
     border: none;
     height: 3px;
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
+    background-color: #c51162;;
 }
 h1, h2, h4, h6, p  {
     text-align: center;
+}
+
+.links {
+    color: lightcyan;
+}
+p {
+    color:rgb(167, 222, 224);
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

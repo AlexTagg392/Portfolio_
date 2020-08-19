@@ -1,0 +1,46 @@
+hr {
+    border: none;
+    height: 3px;
+    background-color: #c51162;;
+}
+h1, h2, h4, h6, p  {
+    text-align: center;
+}
+
+.links {
+    color: lightcyan;
+}
+.card {
+    background-color: navy;
+    color: lightcoral;
+    margin: 25px;
+}
+.card-img {
+    width: 100%;
+    height: auto;
+}
+.card-title {
+    text-align: center;
+}
+.btn {
+    background-color: lightcoral;
+    border-color: lightcyan;
+    margin: 10px;
+    font-size: 150%;
+}
+.text {
+    color:rgb(167, 222, 224);
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-title {
+    color: rgb(252, 252, 168);
+    font-size: 175%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button {
+    margin-left: 15%;
+}
+.card-title {
+    font-size: 200%;
+}
