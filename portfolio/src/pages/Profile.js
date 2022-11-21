@@ -40,14 +40,19 @@ function createData(name, proficiences) {
 }
 
 const rows = [
+  createData('PHP', 100),
+  createDate('Doctrine', 100),
+  createData('JavaScript', 100),
   createData('HTML', 100),
   createData('CSS', 100),
-  createData('JavaScript', 90),
-  createData('React', 90),
+  createData('React', 95),
+  createDate('SQL', 95),
+  createData('Oracle SQL Developer', 95),
   createData('MySQL', 95),
   createData('Sequelize', 95),
   createData('MongoDB', 100),
   createData('Git Bash', 100),
+  createDate('PHPStorm', 100),
   createData('Visual Studio Code', 100),
   createData('MERN Stack', 95),
   createData('.Net', 45),
